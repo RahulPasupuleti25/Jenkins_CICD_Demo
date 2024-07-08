@@ -11,6 +11,7 @@ pipeline {
 	        UIPATH_ORCH_LOGICAL_NAME = "dilipejzisxn"
 	        UIPATH_ORCH_TENANT_NAME = "DefaultTenant"
 	        UIPATH_ORCH_FOLDER_NAME = "Shared"
+			UIPATH_PROCESS_NAME = "JenkinsTestProcess"
 	    }
 	
 
@@ -58,6 +59,7 @@ pipeline {
 	            steps {
 	                echo "Deploying ${BRANCH_NAME} to UAT "
 	                UiPathDeploy (
+					createProcess : False,
 	                packagePath: "Output\\${env.BUILD_NUMBER}",
 	                orchestratorAddress: "${UIPATH_ORCH_URL}",
 	                orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
