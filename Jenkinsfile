@@ -79,7 +79,7 @@ pipeline {
 				steps{
 					echo "Running unattended job"
 					UiPathRunJob (
-					processName: 'CI_CDDemo'
+					processName: 'CI_CDDemo',
 					strategy: Dynamically(machine: '', user: ''),
 	                packagePath: "Output\\${env.BUILD_NUMBER}",
 	                orchestratorAddress: "${UIPATH_ORCH_URL}",
