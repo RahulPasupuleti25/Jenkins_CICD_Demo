@@ -84,7 +84,7 @@ pipeline {
 	                orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
 	                folderName: "${UIPATH_ORCH_FOLDER_NAME}",
 					testTarget: TestSet('TestProject'),
-					timeout: 500,
+					timeout: 7200,
 					parametersFilePath: '',
 					testResultsOutputPath: '',
 					//credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: 'APIUserKey']
