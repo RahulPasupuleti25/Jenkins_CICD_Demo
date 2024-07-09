@@ -74,9 +74,23 @@ pipeline {
 	        )
 	            }
 	        }
-	
+			
+			// Run Test Stages
+			stage('Run Tests'){
+			steps{
+					echo "Running Test set"
+					UiPathTest(
+					orchestratorAddress: "${UIPATH_ORCH_URL}",
+	                orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
+	                folderName: "${UIPATH_ORCH_FOLDER_NAME}",
+					testTarget: TestSet('TestProject')
+					//credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: 'APIUserKey']
+	                credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: 'APIUserKey'), 
+					traceLevel: 'None',
 
-	
+			)
+			}
+			}
 
 	      
 	    }
@@ -88,6 +102,7 @@ pipeline {
 	        timeout(time:80, unit:'MINUTES')
 	        skipDefaultCheckout()
 	    }
+		
 	
 
 	
