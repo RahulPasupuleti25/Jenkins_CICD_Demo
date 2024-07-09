@@ -90,8 +90,8 @@ pipeline {
 					traceLevel: 'None',
 					waitForJobCompletion: true,
 					priority: 'Low',
-					jobType: Unattended()
-					failWhenJobFails: true,
+					jobType: Unattended(),
+					failWhenJobFails: true
 					
 					)
 					}
