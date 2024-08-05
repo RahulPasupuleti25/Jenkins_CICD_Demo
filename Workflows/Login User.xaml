@@ -91,7 +91,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ucas:Logon>
-    <ucas:Login Password="{x:Null}" Window="{x:Null}" Client="100" DisplayName="SAP Login" sap:VirtualizedContainerService.HintSize="388,365" sap2010:WorkflowViewState.IdRef="Login_1" IsSecure="True" Language="EN" MultiLogonOptionToChoose="Multiple" SecurePassword="[SapPassword]" Timeout="5000" Username="[SapUsername]">
+    <ucas:Login Password="{x:Null}" Window="{x:Null}" Client="100" DisplayName="SAP Login" sap:VirtualizedContainerService.HintSize="388,365" sap2010:WorkflowViewState.IdRef="Login_1" IsSecure="True" Language="EN " MultiLogonOptionToChoose="Multiple" SecurePassword="[SapPassword]" Timeout="5000" Username="[SapUsername]">
       <ucas:Login.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="346e3f4a-8b01-4dfb-9498-1976b4b9f4eb" InformativeScreenshot="544d03d3375bae3094e009674ad82b2c" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP' /&gt;">
           <ui:Target.TimeoutMS>
