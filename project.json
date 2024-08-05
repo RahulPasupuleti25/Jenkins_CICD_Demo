@@ -15,7 +15,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.10.3.0",
-  "projectVersion": "1.0.174140224",
+  "projectVersion": "1.0.176544695",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -51,6 +51,18 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "TestCase-CurrentDay.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "433d1581-f580-4cc1-90ad-5badd307b63f",
+        "testCaseType": "TestCase",
+        "fileName": "Create Data-Driven Order.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "69db5eb4-0994-4cc0-b1ff-35fbbfaa7d7b",
+        "testCaseType": "TestCase",
+        "fileName": "Create Standard Order.xaml"
       }
     ],
     "modernBehavior": true,
