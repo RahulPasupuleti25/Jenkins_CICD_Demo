@@ -15,7 +15,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.10.3.0",
-  "projectVersion": "1.0.176544695",
+  "projectVersion": "1.0.176544696",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -60,9 +60,15 @@
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "69db5eb4-0994-4cc0-b1ff-35fbbfaa7d7b",
+        "testCaseId": "ef58ae7b-f114-4924-99f2-40f9b7467068",
         "testCaseType": "TestCase",
-        "fileName": "Create Standard Order.xaml"
+        "fileName": "Create Standard Order-Negative.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ac9af187-00cc-431e-b427-66fd2fdb7f07",
+        "testCaseType": "TestCase",
+        "fileName": "Create Standard Order-Positive.xaml"
       }
     ],
     "modernBehavior": true,
