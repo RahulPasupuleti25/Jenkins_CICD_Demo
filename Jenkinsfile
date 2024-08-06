@@ -40,7 +40,8 @@ pipeline {
 	                UiPathPack (
 	                      outputPath: "Output\\${env.BUILD_NUMBER}",
 	                      projectJsonPath: "project.json",
-						  version: CurrentVersion(),
+						  version: [$class: 'ManualVersionEntry', version: "${MAJOR}.${MINOR}.${env.BUILD_NUMBER}"],
+						  outputType: 'Tests',
 	                      useOrchestrator: false,
 						  traceLevel: 'None'
 	        )
@@ -59,7 +60,7 @@ pipeline {
 	            steps {
 	                echo "Deploying ${BRANCH_NAME} to UAT "
 	                UiPathDeploy (
-					createProcess : true,
+					createProcess : false,
 	                packagePath: "Output\\${env.BUILD_NUMBER}",
 	                orchestratorAddress: "${UIPATH_ORCH_URL}",
 	                orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
