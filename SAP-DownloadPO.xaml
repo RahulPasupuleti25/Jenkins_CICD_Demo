@@ -1,11 +1,11 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.PONumber="4500000272" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="PONumber" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1427,3464</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1427,4072</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -124,7 +124,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="592,3399" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="668,4007" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:Image" Name="out_screenshotimage" />
     </Sequence.Variables>
@@ -133,7 +133,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Use Application: SAP Easy Access" sap:VirtualizedContainerService.HintSize="530,624" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="{x:Null}" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="b5c93996-9473-42e0-bdbd-cb547dfc8fcb" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Use Application: SAP Easy Access" sap:VirtualizedContainerService.HintSize="606,624" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="{x:Null}" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="b5c93996-9473-42e0-bdbd-cb547dfc8fcb" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -157,7 +157,7 @@
         <uix:TargetApp Area="-8, -8, 1936, 1056" FilePath="C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE8SURBVFhHYxgFo2AUjIJBAxxrVls61ay5T2dcC7Ue7AAnoMB/emHHmjWz7KtXMkGtp68DgJbPsCtfzQi1GgLo5QCg5dMcy1cgLH//5UcECG89fa+5dsnR/5Ti0nkH/ztWrcJuefWaKXYVq1B9/v7Lz//Uwk/ffP6f3LX2v335cmyWT7KqQPI5DGAziBwMsjy+ddl/m6IFQMtWo1s+wbZ4CablIIDNMFLxk9ef/se1LMVuec2aPrMStGBHBtgMJAWDLI8FWV6M1fIeqDW4AdCQxSB89f7LfWsPXfm/9uBlknBsCzDYsVlevboLagVxwKZovotd6ZL/diWLScL25cuwWL6mA2os8QBoCFXKAWCwt0GNJA1QqSBqhhpHOqDUAUCfN0KNIg8AHaAJNGg+mTgXaswoGAWjYBSQCBgYAMLf0dVJBbU9AAAAAElFTkSuQmCC" InformativeScreenshot="72f5cd503df0355242e6e984196060ad.png" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP Easy Access' /&gt;" Title="SAP Easy Access" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Use Application: Display Purchase Order : Initial Screen" sap:VirtualizedContainerService.HintSize="530,624" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InUiElement="{x:Null}" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="a9513e6b-f917-4911-93ef-86826076650a" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Use Application: Display Purchase Order : Initial Screen" sap:VirtualizedContainerService.HintSize="606,624" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InUiElement="{x:Null}" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="a9513e6b-f917-4911-93ef-86826076650a" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -181,7 +181,7 @@
         <uix:TargetApp Area="-8, -8, 1936, 1056" FilePath="C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE8SURBVFhHYxgFo2AUjIJBAxxrVls61ay5T2dcC7Ue7AAnoMB/emHHmjWz7KtXMkGtp68DgJbPsCtfzQi1GgLo5QCg5dMcy1cgLH//5UcECG89fa+5dsnR/5Ti0nkH/ztWrcJuefWaKXYVq1B9/v7Lz//Uwk/ffP6f3LX2v335cmyWT7KqQPI5DGAziBwMsjy+ddl/m6IFQMtWo1s+wbZ4CablIIDNMFLxk9ef/se1LMVuec2aPrMStGBHBtgMJAWDLI8FWV6M1fIeqDW4AdCQxSB89f7LfWsPXfm/9uBlknBsCzDYsVlevboLagVxwKZovotd6ZL/diWLScL25cuwWL6mA2os8QBoCFXKAWCwt0GNJA1QqSBqhhpHOqDUAUCfN0KNIg8AHaAJNGg+mTgXaswoGAWjYBSQCBgYAMLf0dVJBbU9AAAAAElFTkSuQmCC" InformativeScreenshot="3cbbeb05b83e5147d9d961a17019ba84.png" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Display Purchase Order : Initial Screen' /&gt;" Title="Display Purchase Order : Initial Screen" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Use Application: Display Purchase Order : Item Overview" sap:VirtualizedContainerService.HintSize="530,843" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InUiElement="{x:Null}" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="71493a3a-ff9a-4e07-9782-6aa6f9001f8a" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Use Application: Display Purchase Order : Item Overview" sap:VirtualizedContainerService.HintSize="606,843" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InUiElement="{x:Null}" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="71493a3a-ff9a-4e07-9782-6aa6f9001f8a" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -206,7 +206,7 @@
         <uix:TargetApp Area="-8, -8, 1936, 1056" FilePath="C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE8SURBVFhHYxgFo2AUjIJBAxxrVls61ay5T2dcC7Ue7AAnoMB/emHHmjWz7KtXMkGtp68DgJbPsCtfzQi1GgLo5QCg5dMcy1cgLH//5UcECG89fa+5dsnR/5Ti0nkH/ztWrcJuefWaKXYVq1B9/v7Lz//Uwk/ffP6f3LX2v335cmyWT7KqQPI5DGAziBwMsjy+ddl/m6IFQMtWo1s+wbZ4CablIIDNMFLxk9ef/se1LMVuec2aPrMStGBHBtgMJAWDLI8FWV6M1fIeqDW4AdCQxSB89f7LfWsPXfm/9uBlknBsCzDYsVlevboLagVxwKZovotd6ZL/diWLScL25cuwWL6mA2os8QBoCFXKAWCwt0GNJA1QqSBqhhpHOqDUAUCfN0KNIg8AHaAJNGg+mTgXaswoGAWjYBSQCBgYAMLf0dVJBbU9AAAAAElFTkSuQmCC" InformativeScreenshot="62bb1b6dd8ed04537be59ee38930926a.png" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Display Purchase Order : Item Overview' /&gt;" Title="Display Purchase Order : Item Overview" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
-    <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="Output\PO_Screenshots.docx" sap:VirtualizedContainerService.HintSize="530,556" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
+    <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="Output\PO_Screenshots.docx" sap:VirtualizedContainerService.HintSize="606,556" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
       <p:WordApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WordDocument">
           <ActivityAction.Argument>
@@ -224,28 +224,28 @@
         </ActivityAction>
       </p:WordApplicationScope.Body>
     </p:WordApplicationScope>
-    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="530,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
-    <If Condition="[PONumber.ToString.Trim=&quot;4500000560&quot;]" DisplayName="At the last test case, Send Email" sap:VirtualizedContainerService.HintSize="530,351" sap2010:WorkflowViewState.IdRef="If_1">
+    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="606,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+    <If Condition="[PONumber.ToString.Trim=&quot;4500000560&quot;]" DisplayName="At the last test case, Send Email" sap:VirtualizedContainerService.HintSize="606,959" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
-        <Sequence sap:VirtualizedContainerService.HintSize="300,169" sap2010:WorkflowViewState.IdRef="Sequence_9">
+        <Sequence sap:VirtualizedContainerService.HintSize="572,777" sap2010:WorkflowViewState.IdRef="Sequence_9">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <umab:OutlookApplicationCard Account="rahul.pasupuleti@uipath.com" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Desktop Outlook App" sap:VirtualizedContainerService.HintSize="258,81" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_2">
+          <umab:OutlookApplicationCard Account="rahul.pasupuleti@uipath.com" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Desktop Outlook App" sap:VirtualizedContainerService.HintSize="530,689" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_2">
             <umab:OutlookApplicationCard.Body>
               <ActivityAction x:TypeArguments="um:IMailQuickHandle">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Outlook" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,521" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,507" sap2010:WorkflowViewState.IdRef="Sequence_7">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <umab:SendMailX Account="[Outlook]" Bcc="{x:Null}" Body="[&quot;Hello Team&quot;+vbLf+&quot;Please find the attached document.&quot;+vbLf+&quot;Regards,&quot;+vbLf+&quot;SAP Bot&quot;]" BodyDocumentPath="{x:Null}" BodyType="Text" Cc="{x:Null}" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,410" HtmlBodyFromText="{x:Null}" sap2010:WorkflowViewState.IdRef="SendMailX_3" Importance="Normal" MaxBodyDocumentSizeMB="2" ReplyTo="{x:Null}" Sensitivity="Normal" Subject="PO Document Attached" To="rahul.pasupuleti@uipath.com" UseDocumentAsBody="False">
+                  <umab:SendMailX Account="[Outlook]" Bcc="{x:Null}" Body="[&quot;Hello Team&quot;+vbLf+&quot;Please find the attached document.&quot;+vbLf+&quot;Regards,&quot;+vbLf+&quot;SAP Bot&quot;]" BodyDocumentPath="{x:Null}" BodyType="Text" Cc="{x:Null}" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,396" HtmlBodyFromText="{x:Null}" sap2010:WorkflowViewState.IdRef="SendMailX_3" Importance="Normal" MaxBodyDocumentSizeMB="2" ReplyTo="{x:Null}" Sensitivity="Normal" Subject="PO Document Attached" To="rahul.pasupuleti@uipath.com" UseDocumentAsBody="False">
                     <umab:SendMailX.Files>
                       <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
                         <InArgument x:TypeArguments="x:String">Output\PO_Screenshots.docx</InArgument>
@@ -267,7 +267,7 @@
             </umab:OutlookApplicationCard.Body>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
