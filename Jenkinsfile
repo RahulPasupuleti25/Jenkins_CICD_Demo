@@ -75,27 +75,6 @@ pipeline {
 	            }
 	        }
 			
-			//Run JOB
-			stage('Run Job'){
-				steps{
-					echo "Running unattended job"
-					UiPathRunJob (
-					processName: 'CI_CDDemo',
-					strategy: Dynamically(machine: '', user: ''),
-	                orchestratorAddress: "${UIPATH_ORCH_URL}",
-	                orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
-	                folderName: "${UIPATH_ORCH_FOLDER_NAME}",
-	                //credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: 'APIUserKey']
-	                credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: 'APIUserKey'), 
-					traceLevel: 'None',
-					waitForJobCompletion: true,
-					priority: 'Low',
-					jobType: Unattended(),
-					failWhenJobFails: true
-					
-					)
-					}
-					}
 					
 			
 			// Run Test Stages
